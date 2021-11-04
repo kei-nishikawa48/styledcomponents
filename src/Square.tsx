@@ -4,7 +4,7 @@ type Props = {
   color?: string;
 };
 
-export const Square = ({ size, color }: Props) => {
+const Square = ({ size, color }: Props) => {
   return <StyledSquare size={size} color={color} />;
 };
 
@@ -48,3 +48,4 @@ const StyledSquare = styled.div<StyledProps>`
   }
   transition: all 0.3s ease-in-out;
 `;
+export default Square;
